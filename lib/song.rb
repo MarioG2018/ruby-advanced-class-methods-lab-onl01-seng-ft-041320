@@ -57,6 +57,8 @@ class Song
     song.name=file[1].gsub(".mp3","")
     return song
     
+  end
+    
   def self.destroy_all
     @@all.clear()
   
