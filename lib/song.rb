@@ -46,6 +46,10 @@ class Song
     file=self.new
     file=file+".mp3"
     file.split(" - ")
+    file=file -".mp3"
+    file[0]=name
+    file[1]=artist_name
+    return file
     
     
   def self.destroy_all
