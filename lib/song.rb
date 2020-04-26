@@ -46,7 +46,7 @@ class Song
    # file=self.new
     #file=file+".mp3"
     file=file.split()
-    file -".mp3"
+    file.pop(".mp3")
     file[0]=file.name
     file[1]=file.artist_name
     return file
