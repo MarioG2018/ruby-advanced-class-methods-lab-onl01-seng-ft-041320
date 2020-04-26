@@ -46,12 +46,9 @@ class Song
     file=file.split("-")
     song=self.new
     song.artist_name=file[0]
-    song.name=file[1]
-    file.pop(".mp3")
-    file[2].pop
-    file[0]=file.name
-    file[1]=file.artist_name
-    return file
+    song.name=file[1].gsub(".mp3","")
+    
+    return song
   end
     
     
