@@ -55,7 +55,8 @@ class Song
     song=self.new
     song.artist_name=file[0]
     song.name=file[1].gsub(".mp3","")
-    return song
+    song.save
+    song
     
   end
     
