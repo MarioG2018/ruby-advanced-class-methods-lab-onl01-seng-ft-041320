@@ -1,4 +1,4 @@
-require pry
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -42,13 +42,16 @@ class Song
     @@all.sort_by {|letter|letter.name}
   end
   
-  def self.new_from_filename
-    song=self.new
-    binding.pry
-  end
+  def self.new_from_filename(file)
+    file=self.new
+    file=file+".mp3"
+    file.split(" - ")
+    
+    
   def self.destroy_all
     @@all.clear()
   
   end
+  
 
 end
